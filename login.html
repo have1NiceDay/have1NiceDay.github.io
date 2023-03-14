@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Login Page</title>
+    <link rel="stylesheet" href="logincss.css">
+</head>
+<body>
+    <div id="container">
+        <h1 class="title">Happy Birthday</h1>
+        <img src="birthday-cake.jpg" alt="Birthday Cake" class="image">
+        <form>
+            <label for="username" class="label">Username:</label>
+            <input type="text" id="username" name="username" class="input" required>
+            <br>
+            <label for="password" class="label">Password:</label>
+            <input type="password" id="password" name="password" class="input" required>
+            <br>
+            <button type="button" id="loginButton" onclick="login()" class="button">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<script>
+    function login() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var correctUsername = localStorage.getItem("username");
+    var correctPassword = localStorage.getItem("password");
+    if(username === '111' && password == '111'){
+        window.location = "dashboard.html";//登录成功 进入dashboard.html
+    } else {
+        alert("Invalid username or password");//登录失败 弹出提示信息
+    }
+}
+</script>
