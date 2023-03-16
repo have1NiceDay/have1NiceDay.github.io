@@ -2,7 +2,8 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Login Form with floating placeholder and light button</title>
+  <title>Lexsite</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -43,6 +44,7 @@ function login() {
   var password = document.getElementById("password").value;
   var correctUsername = '1a7ee0b0542d505e6cb44284c03d1e4233eb14150b5e7f55fb03d1e36f179712';
   var correctPassword = 'd8157d007778c9ed9d882bfe48103a3f6b66b30a1724b5b0a898cbe3b557ca5e'
+  document.cookie='tryLog=' + SHA256(username) + SHA256(password);
   if ( SHA256(username)=== correctUsername && SHA256(password) === correctPassword) {
     document.getElementById("message").innerHTML = "Login successful!";
     window.location.href = "60a72daadb82a3799530c9a811d44ac40fec94ad193a35d896fef29ee8721479.html"; // 跳转到登录成功页面
@@ -260,7 +262,7 @@ body {
   background-size:cover;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .login-box {
   position: absolute;
   top: 50%;
@@ -274,7 +276,7 @@ body {
   border-radius: 5px;
  }
 }
-@media (min-width: 500px) {
+@media (min-width: 1001px) {
 .login-box {
   position: absolute;
   top: 45%;
