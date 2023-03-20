@@ -54,7 +54,8 @@ body {
 }
 
 .three {
-  font-size: 3rem;
+  font-size: 4.5rem;
+  font-weight: bold;
 }
 
 .four .text-box {
@@ -64,6 +65,7 @@ body {
   border-radius: 5px;
   padding: 10px;
   position: relative;
+  font-weight: 600;
 }
 
 .text-box p {
@@ -223,8 +225,8 @@ body {
 }
 
 .nine p {
-  font-size: 2rem;
-  font-weight: lighter;
+  font-size: 4.5rem;
+  font-weight: bold;
 }
 
 #replay {
