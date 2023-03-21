@@ -2,7 +2,8 @@
   
   .wrapper {
     position: relative;
-    min-height: 100vh;
+    min-height: 90vh;
+    max-height: 90vh;
   }
   
   [class|=confetti] {
@@ -149,14 +150,14 @@
   @-webkit-keyframes drop-5 {
     100% {
       top: 110%;
-      left: 100%;
+      left: 90%;
     }
   }
   
   @keyframes drop-5 {
     100% {
       top: 110%;
-      left: 100%;
+      left: 90%;
     }
   }
   .confetti-6 {
@@ -1124,14 +1125,14 @@
   @-webkit-keyframes drop-44 {
     100% {
       top: 110%;
-      left: 108%;
+      left: 100%;
     }
   }
   
   @keyframes drop-44 {
     100% {
       top: 110%;
-      left: 108%;
+      left: 100%;
     }
   }
   .confetti-45 {
@@ -1399,14 +1400,14 @@
   @-webkit-keyframes drop-55 {
     100% {
       top: 110%;
-      left: 101%;
+      left: 100%;
     }
   }
   
   @keyframes drop-55 {
     100% {
       top: 110%;
-      left: 101%;
+      left: 100%;
     }
   }
   .confetti-56 {
@@ -1474,14 +1475,14 @@
   @-webkit-keyframes drop-58 {
     100% {
       top: 110%;
-      left: 101%;
+      left: 100%;
     }
   }
   
   @keyframes drop-58 {
     100% {
       top: 110%;
-      left: 101%;
+      left: 100%;
     }
   }
   .confetti-59 {
@@ -1749,14 +1750,14 @@
   @-webkit-keyframes drop-69 {
     100% {
       top: 110%;
-      left: 105%;
+      left: 100%;
     }
   }
   
   @keyframes drop-69 {
     100% {
       top: 110%;
-      left: 105%;
+      left: 99%;
     }
   }
   .confetti-70 {
@@ -1874,14 +1875,14 @@
   @-webkit-keyframes drop-74 {
     100% {
       top: 110%;
-      left: 102%;
+      left: 98%;
     }
   }
   
   @keyframes drop-74 {
     100% {
       top: 110%;
-      left: 102%;
+      left: 98%;
     }
   }
   .confetti-75 {
@@ -2074,14 +2075,14 @@
   @-webkit-keyframes drop-82 {
     100% {
       top: 110%;
-      left: 105%;
+      left: 95%;
     }
   }
   
   @keyframes drop-82 {
     100% {
       top: 110%;
-      left: 105%;
+      left: 95%;
     }
   }
   .confetti-83 {
@@ -2124,14 +2125,14 @@
   @-webkit-keyframes drop-84 {
     100% {
       top: 110%;
-      left: 102%;
+      left: 98%;
     }
   }
   
   @keyframes drop-84 {
     100% {
       top: 110%;
-      left: 102%;
+      left: 98%;
     }
   }
   .confetti-85 {
@@ -2699,14 +2700,14 @@
   @-webkit-keyframes drop-107 {
     100% {
       top: 110%;
-      left: 102%;
+      left: 99%;
     }
   }
   
   @keyframes drop-107 {
     100% {
       top: 110%;
-      left: 102%;
+      left: 99%;
     }
   }
   .confetti-108 {
@@ -2974,14 +2975,14 @@
   @-webkit-keyframes drop-118 {
     100% {
       top: 110%;
-      left: 107%;
+      left: 93%;
     }
   }
   
   @keyframes drop-118 {
     100% {
       top: 110%;
-      left: 107%;
+      left: 93%;
     }
   }
   .confetti-119 {
@@ -3224,14 +3225,14 @@
   @-webkit-keyframes drop-128 {
     100% {
       top: 110%;
-      left: 108%;
+      left: 92%;
     }
   }
   
   @keyframes drop-128 {
     100% {
       top: 110%;
-      left: 108%;
+      left: 92%;
     }
   }
   .confetti-129 {
@@ -3399,14 +3400,14 @@
   @-webkit-keyframes drop-135 {
     100% {
       top: 110%;
-      left: 103%;
+      left: 100%;
     }
   }
   
   @keyframes drop-135 {
     100% {
       top: 110%;
-      left: 103%;
+      left: 100%;
     }
   }
   .confetti-136 {

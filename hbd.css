@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #F0E2DB;
@@ -8,12 +9,22 @@ body {
   transition: 1s;
 }
 
+body.open::before {
+  content: "";
+  display: none;
+  /* background:url(./img/band.gif); */
+}
+
+
 body.open{
+  margin: 0;
   animation: bg-change 1s 1;
-  background-color: black;
-  background:url(./img/band.gif)  no-repeat center center;
-  background-size: cover;
-  transition: 1s;
+  /* background-color: black;
+  background:url(./img/band.gif); 
+  background-position: center 80%;
+  background-repeat: no-repeat; */
+  background-color: black; /* 将未被背景图覆盖的区域设置为黑色 */
+  transition: background-color 1s;
 }
 @keyframes bg-change{
   0%{
@@ -101,16 +112,50 @@ body.open{
 
 .gift-text {
   position: absolute;
-  top: 50%;
+  font-size: 8rem;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: bold;
+  /* letter-spacing: 1rem; */
+  top: -200%;
   left: 50%;
   margin: 0;
   color: #FFFFFF;
   white-space: nowrap;
-  transform: translate3d(-50%, -50%, 0) scale(.5);
-  transform-origin: center center;
-  z-index: -1;
+  transform: translate3d(-50%, 50%, 0) scale(.5);
+  transform-origin: 50% 50%;
+  z-index: 2;
   opacity:1;
   transition: 5s;
+}
+.gift-small-text {
+  position: absolute;
+  font-size: 2rem;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: bold;
+  /* letter-spacing: 1rem; */
+  top: 0%;
+  left: 50%;
+  margin: 0;
+  color: #FFFFFF;
+  white-space: nowrap;
+  transform: translate3d(-50%, 50%, 0) scale(.5);
+  transform-origin: 50% 50%;
+  z-index: 3;
+  opacity:1;
+  transition: 5s;
+}
+
+.band {
+  position: absolute;
+  width: 150vw;
+  height: 40vw;
+  top: -200%;
+  left: 50%;
+  margin: 0;
+  color: #FFFFFF;
+  transform: translate3d(-50%, 50%, 0) scale(.5);
+  z-index: 10;
+  opacity:1;
 }
 
 .gift-box {
@@ -134,4 +179,11 @@ body.open{
     top:50px;
     opacity:0;
   }  
+}
+
+canvas {
+	/* cursor: crosshair; */
+  position: fixed;
+	display: block;
+  z-index: -1;
 }

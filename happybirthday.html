@@ -6,21 +6,25 @@
   <title>Happy birthday!</title>
   <link rel="stylesheet" href="conf.css">
   <link rel="stylesheet" href="hbd.css">
-  <link rel="stylesheet" href="band.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎆</text></svg>">
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <div id="app">
   <div class="gift" :class="{dukdik: !open}" @click="click">
+
     <div class="gift-top" 
          :class="{boxOpen: open}"
      ></div>
-    <h1 class="gift-text" v-if="open">{{text}}</h1>
+     <h1 class="gift-text" v-if="open">{{text}}</h1>
+     <span class="gift-small-text" v-if="open">Being with you and not being with you is the only way I have to measure time</span>
     <div class="gift-box"
          :class="{boxDown: open}"
      ></div>
+    <img v-if="open" class = 'band' src="./img/band.gif" alt="描述图片的文本">
   </div>
+  <canvas id="canvas"  v-cloak v-show="open">Canvas is not supported in your browser.</canvas>
+  <canvas id="canvas"  v-cloak v-show="open">Canvas is not supported in your browser.</canvas>
   <div class="wrapper" v-cloak v-show="open"  >
     <div class="confetti-149"></div>
     <div class="confetti-148"></div>
@@ -173,13 +177,16 @@
     <div class="confetti-1"></div>
     <div class="confetti-0"></div>
 </div>
-<canvas id="canvas" v-cloak v-show="open">Canvas is not supported in your browser.</canvas>
+
 
 </div>
+
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script  src="./happybirthday.js"></script>
-
+  <script  src="./fireworktree.js"></script>
+  <script  src="./fireworks.js"></script>
 </body>
 </html>
 
