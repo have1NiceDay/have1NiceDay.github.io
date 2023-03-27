@@ -4,10 +4,12 @@
     position: relative;
     min-height: 90vh;
     max-height: 90vh;
+    z-index: -1;
   }
   
   [class|=confetti] {
     position: absolute;
+    z-index: -1;
   }
   
   .confetti-0 {
