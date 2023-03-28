@@ -34,6 +34,29 @@ body.open{
       background-color: black;
   }
 }
+
+
+/* 默认情况下显示的文本 */
+.gift-small-text:before {
+  content: 'Being with you and not being with you is the only way I have to measure time';
+}
+
+/* 在手机上显示的文本 */
+@media screen and (max-width: 1000px) {
+  .gift-small-text:before {
+    content: 'Being with you and not being with you \a is the only way I have to measure time';
+  }
+}
+
+/* 在电脑上显示的文本 */
+@media screen and (min-width: 1001px) {
+  .gift-small-text:before {
+    content: 'Being with you and not being with you is the only way I have to measure time';
+  }
+}
+
+
+
 @media (max-width: 1000px) {
   .gift {
     position: absolute;
@@ -52,7 +75,7 @@ body.open{
     position: absolute;
     width: 150vw;
     height: 40vw;
-    top: 300%;
+    top: 200%;
     left: 50%;
     margin: 0;
     color: #FFFFFF;
@@ -79,9 +102,9 @@ body.open{
     transition: 5s;
   }
 
-  .gift-small-text-mob {
+  .gift-small-text {
     position: absolute;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Press Start 2P', sans-serif;
     font-weight: bold;
     /* letter-spacing: 1rem; */
@@ -97,10 +120,10 @@ body.open{
     transition: 5s;
     word-wrap: break-word;
   }
-  .gift-small-text-pc {
-    display: none;
-  }
+
 }
+
+
 
 @media (min-width: 1001px) {
   .gift {
@@ -147,9 +170,9 @@ body.open{
     transition: 5s;
   }
 
-  .gift-small-text-pc {
+  .gift-small-text {
     position: absolute;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Press Start 2P', sans-serif;
     font-weight: bold;
     /* letter-spacing: 1rem; */
@@ -163,10 +186,6 @@ body.open{
     z-index: 3;
     opacity:1;
     transition: 5s;
-  }
-
-  .gift-small-text-mob {
-    display: none;
   }
 }
 
