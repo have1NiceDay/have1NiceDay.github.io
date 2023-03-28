@@ -34,18 +34,136 @@ body.open{
       background-color: black;
   }
 }
-.gift {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 10vw;
-  height: 10vw;
-  transform-origin: 0% 0%;
-  cursor: pointer;
-  transform: translate(-50%, -50%);
-  transition: 1s;
-/*   animation: dukdik 0.5s infinite; */
+@media (max-width: 1000px) {
+  .gift {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10vh;
+    height: 10vh;
+    transform-origin: 0% 0%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+  /*   animation: dukdik 0.5s infinite; */
+  }
+
+  .band {
+    position: absolute;
+    width: 150vw;
+    height: 40vw;
+    top: 400%;
+    left: 50%;
+    margin: 0;
+    color: #FFFFFF;
+    transform: translate3d(-50%, 50%, 0) scale(.5);
+    z-index: 10;
+    opacity:1;
+  }
+
+  .gift-text {
+    position: absolute;
+    font-size: 8rem;
+    font-family: 'Press Start 2P', sans-serif;
+    font-weight: bold;
+    /* letter-spacing: 1rem; */
+    top: -500%;
+    left: 50%;
+    margin: 0;
+    color: #FFFFFF;
+    white-space: nowrap;
+    transform: translate3d(-50%, 50%, 0) scale(.5);
+    transform-origin: 50% 50%;
+    z-index: 2;
+    opacity:1;
+    transition: 5s;
+  }
+
+  .gift-small-text {
+    position: absolute;
+    font-size: 3rem;
+    font-family: 'Press Start 2P', sans-serif;
+    font-weight: bold;
+    /* letter-spacing: 1rem; */
+    top: 0%;
+    left: 50%;
+    margin: 0;
+    color: #FFFFFF;
+    white-space: nowrap;
+    transform: translate3d(-50%, 50%, 0) scale(.5);
+    transform-origin: 50% 50%;
+    z-index: 3;
+    opacity:1;
+    transition: 5s;
+    word-wrap: break-word;
+  }
 }
+
+@media (min-width: 1001px) {
+  .gift {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10vw;
+    height: 10vw;
+    transform-origin: 0% 0%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+  /*   animation: dukdik 0.5s infinite; */
+  }
+
+  .band {
+    position: absolute;
+    width: 150vw;
+    height: 40vw;
+    top: -200%;
+    left: 50%;
+    margin: 0;
+    color: #FFFFFF;
+    transform: translate3d(-50%, 50%, 0) scale(.5);
+    z-index: 10;
+    opacity:1;
+  }
+
+  .gift-text {
+    position: absolute;
+    font-size: 8rem;
+    font-family: 'Press Start 2P', sans-serif;
+    font-weight: bold;
+    /* letter-spacing: 1rem; */
+    top: -200%;
+    left: 50%;
+    margin: 0;
+    color: #FFFFFF;
+    white-space: nowrap;
+    transform: translate3d(-50%, 50%, 0) scale(.5);
+    transform-origin: 50% 50%;
+    z-index: 2;
+    opacity:1;
+    transition: 5s;
+  }
+
+  .gift-small-text {
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'Press Start 2P', sans-serif;
+    font-weight: bold;
+    /* letter-spacing: 1rem; */
+    top: 0%;
+    left: 50%;
+    margin: 0;
+    color: #FFFFFF;
+    white-space: nowrap;
+    transform: translate3d(-50%, 50%, 0) scale(.5);
+    transform-origin: 50% 50%;
+    z-index: 3;
+    opacity:1;
+    transition: 5s;
+  }
+
+}
+
 .dukdik{
   transform-origin: 0% 0%;
   cursor: pointer;
@@ -110,53 +228,7 @@ body.open{
   transform: translate3d(0, -100%, 0) skew(-10deg, -10deg);
 }
 
-.gift-text {
-  position: absolute;
-  font-size: 8rem;
-  font-family: 'Press Start 2P', sans-serif;
-  font-weight: bold;
-  /* letter-spacing: 1rem; */
-  top: -200%;
-  left: 50%;
-  margin: 0;
-  color: #FFFFFF;
-  white-space: nowrap;
-  transform: translate3d(-50%, 50%, 0) scale(.5);
-  transform-origin: 50% 50%;
-  z-index: 2;
-  opacity:1;
-  transition: 5s;
-}
-.gift-small-text {
-  position: absolute;
-  font-size: 2rem;
-  font-family: 'Press Start 2P', sans-serif;
-  font-weight: bold;
-  /* letter-spacing: 1rem; */
-  top: 0%;
-  left: 50%;
-  margin: 0;
-  color: #FFFFFF;
-  white-space: nowrap;
-  transform: translate3d(-50%, 50%, 0) scale(.5);
-  transform-origin: 50% 50%;
-  z-index: 3;
-  opacity:1;
-  transition: 5s;
-}
 
-.band {
-  position: absolute;
-  width: 150vw;
-  height: 40vw;
-  top: -200%;
-  left: 50%;
-  margin: 0;
-  color: #FFFFFF;
-  transform: translate3d(-50%, 50%, 0) scale(.5);
-  z-index: 10;
-  opacity:1;
-}
 
 .gift-box {
   width: 100%;
