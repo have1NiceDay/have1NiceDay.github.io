@@ -68,7 +68,7 @@ body.open{
 
   .gift-text {
     position: absolute;
-    font-size: 8rem;
+    font-size: 7.5rem;
     font-family: 'Press Start 2P', sans-serif;
     font-weight: bold;
     /* letter-spacing: 1rem; */
@@ -84,6 +84,23 @@ body.open{
     transition: 5s;
   }
 
+  .gift-small-text {
+    position: absolute;
+    font-size: 3rem;
+    font-family: 'Press Start 2P', sans-serif;
+    font-weight: bold;
+    /* letter-spacing: 1rem; */
+    top: 0%;
+    left: 50%;
+    margin: 0;
+    color: #FFFFFF;
+    white-space: nowrap;
+    transform: translate3d(-50%, 50%, 0) scale(.5);
+    transform-origin: 50% 50%;
+    z-index: 3;
+    opacity:1;
+    transition: 5s;
+  }
 }
 
 
@@ -133,6 +150,23 @@ body.open{
     opacity:1;
   }
 
+  .gift-small-text {
+    position: absolute;
+    font-size: 2rem;
+    font-family: 'Press Start 2P', sans-serif;
+    font-weight: bold;
+    /* letter-spacing: 1rem; */
+    top: 0%;
+    left: 50%;
+    margin: 0;
+    color: #FFFFFF;
+    white-space: nowrap;
+    transform: translate3d(-50%, 50%, 0) scale(.5);
+    transform-origin: 50% 50%;
+    z-index: 3;
+    opacity:1;
+    transition: 5s;
+  }
 }
 
 .dukdik{
@@ -224,23 +258,6 @@ body.open{
   }  
 }
 
-.gift-small-text {
-  position: absolute;
-  font-size: 2rem;
-  font-family: 'Press Start 2P', sans-serif;
-  font-weight: bold;
-  /* letter-spacing: 1rem; */
-  top: 0%;
-  left: 50%;
-  margin: 0;
-  color: #FFFFFF;
-  white-space: nowrap;
-  transform: translate3d(-50%, 50%, 0) scale(.5);
-  transform-origin: 50% 50%;
-  z-index: 3;
-  opacity:1;
-  transition: 5s;
-}
 
 canvas {
 	/* cursor: crosshair; */

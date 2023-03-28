@@ -3,7 +3,7 @@ var app = new Vue({
     data: {
       open: false,
       text: 'Happy Birthday!',
-      smallText: (window.innerWidth > 1000 && window.innerHeight > 1000) ? 'Being with you and not being with you is the only way I have to measure time' : 'Being with you and not being with you<br>&nbsp;&nbsp;is the only way I have to measure time'
+      smallText: (window.innerWidth > 1000) ? 'Being with you and not being with you is the only way I have to measure time' : 'Being with you and not being with you<br><br><br>is the only way I have to measure time'
     },
     methods: {
       click: function() {
