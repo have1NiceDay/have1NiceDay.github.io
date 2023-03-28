@@ -52,7 +52,7 @@ body.open{
     position: absolute;
     width: 150vw;
     height: 40vw;
-    top: 400%;
+    top: 300%;
     left: 50%;
     margin: 0;
     color: #FFFFFF;
@@ -79,7 +79,7 @@ body.open{
     transition: 5s;
   }
 
-  .gift-small-text {
+  .gift-small-text-mob {
     position: absolute;
     font-size: 3rem;
     font-family: 'Press Start 2P', sans-serif;
@@ -96,6 +96,9 @@ body.open{
     opacity:1;
     transition: 5s;
     word-wrap: break-word;
+  }
+  .gift-small-text-pc {
+    display: none;
   }
 }
 
@@ -144,7 +147,7 @@ body.open{
     transition: 5s;
   }
 
-  .gift-small-text {
+  .gift-small-text-pc {
     position: absolute;
     font-size: 2rem;
     font-family: 'Press Start 2P', sans-serif;
@@ -162,6 +165,9 @@ body.open{
     transition: 5s;
   }
 
+  .gift-small-text-mob {
+    display: none;
+  }
 }
 
 .dukdik{
