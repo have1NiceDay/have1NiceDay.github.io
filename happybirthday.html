@@ -17,13 +17,12 @@
          :class="{boxOpen: open}"
      ></div>
      <h1 class="gift-text" v-if="open">{{text}}</h1>
-     <span class="gift-small-text" v-if="open">Being with you and not being with you is the only way I have to measure time</span>
+     <span class="gift-small-text" v-if="open">{{smallText}}</span>
     <div class="gift-box"
          :class="{boxDown: open}"
      ></div>
     <img v-if="open" class = 'band' src="./img/band.gif" alt="描述图片的文本">
   </div>
-  <canvas id="canvas"  v-cloak v-show="open">Canvas is not supported in your browser.</canvas>
   <canvas id="canvas"  v-cloak v-show="open">Canvas is not supported in your browser.</canvas>
   <div class="wrapper" v-cloak v-show="open"  >
     <div class="confetti-149"></div>

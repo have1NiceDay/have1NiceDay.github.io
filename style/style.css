@@ -86,9 +86,7 @@ body {
     position: relative;
     font-weight: 600;
   }
-  .hbd-chatbox {
-    width: 60%;
-  }
+
 }
 @media (min-width: 1001px) {
   .four .text-box {
@@ -100,9 +98,7 @@ body {
     position: relative;
     font-weight: 600;
   }
-  .hbd-chatbox {
 
-  }
 }
 .text-box p {
   margin: 0;

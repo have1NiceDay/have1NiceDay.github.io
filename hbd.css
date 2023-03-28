@@ -67,7 +67,7 @@ body.open{
     font-family: 'Press Start 2P', sans-serif;
     font-weight: bold;
     /* letter-spacing: 1rem; */
-    top: -500%;
+    top: -300%;
     left: 50%;
     margin: 0;
     color: #FFFFFF;
@@ -115,9 +115,9 @@ body.open{
 
   .band {
     position: absolute;
-    width: 150vw;
+    width: 130vw;
     height: 40vw;
-    top: -200%;
+    top: -150%;
     left: 50%;
     margin: 0;
     color: #FFFFFF;
